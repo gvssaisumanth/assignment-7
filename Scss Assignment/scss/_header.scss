@@ -1,0 +1,62 @@
+header{
+    background-color: #8D7B68;
+}
+section{
+    padding:5rem 1rem;
+ }
+ 
+ .link-btn{
+    margin-top: 1rem;
+    padding:1rem 3rem;
+    display: inline-block;
+    border:$border;
+    color:$contact-color;
+    background: none;
+    cursor: pointer;
+    font-size: 1.7rem;
+ 
+    &:hover{
+       background: $contact-color;
+       color:$white;
+    }
+ }
+ 
+ .heading{
+    text-align: center;
+    margin-bottom: 4rem;
+    @include title-text(3rem);
+ }
+ 
+ .header{
+    z-index: 1000;
+    padding:2rem 0;
+    float: right;
+    &.active{
+       padding:2rem 0;
+       background: $main-color;
+    }
+ 
+    .nav{
+       a{
+          font-size: 2rem;
+          margin-right: 1rem;
+          color:$white;
+ 
+          &:hover{
+             text-decoration: underline !important;
+             text-underline-offset: .5rem;
+          }
+       }
+    }
+ 
+    .icons div{
+       font-size: 2.5rem;
+       color:$white;
+       margin-right: 1rem;
+       cursor: pointer;
+    }
+ 
+    #menu-btn{
+       display: none;
+    }
+ }
